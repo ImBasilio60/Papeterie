@@ -23,8 +23,315 @@ img {
 }
 
 html {
-  font-size: clamp(3.7777777778px, 0.3689236111vw, 22.6666666667px);
-  font-family: "Raleway", sans-serif;
+  font-size: clamp(4.6288888889px, 1.4465277778vw, 27.7733333333px);
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.btn {
+  color: #fff;
+  background-color: #3d5f00;
+  border: none;
+  border-radius: 1.3655518216rem 0;
+}
+@media (min-width: 1024px) {
+  .btn {
+    border-radius: 0.6827759108rem 0;
+  }
+}
+
+* {
+  color: #3d5f00;
+}
+
+.title {
+  font-size: 3.6985971089rem;
+  text-transform: capitalize;
+}
+@media (min-width: 1024px) {
+  .title {
+    font-size: 1.8492985544rem;
+  }
+}
+
+p {
+  font-size: 1.706939777rem;
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 0.8534698885rem;
+  }
+}
+
+.header {
+  background: #3d5f00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5.9401504241rem;
+  padding: 1.5703845949rem 3.8235451005rem;
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 2.970075212rem;
+    padding: 0.7851922974rem 1.9117725503rem;
+  }
+}
+.header .left {
+  border-bottom: white solid 1px;
+  position: relative;
+  display: none;
+  width: 19.2542806849rem;
+}
+@media (min-width: 1024px) {
+  .header .left {
+    display: block;
+    width: 9.6271403425rem;
+  }
+}
+.header .left input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.header .left input::placeholder {
+  color: white;
+}
+.header .left i {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.6386621859rem;
+}
+@media (min-width: 1024px) {
+  .header .left i {
+    font-size: 0.819331093rem;
+  }
+}
+.header .center {
+  cursor: pointer;
+}
+.header .center img {
+  width: 5.1208193311rem;
+}
+@media (min-width: 1024px) {
+  .header .center img {
+    width: 2.5604096655rem;
+  }
+}
+.header .right {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.9359364165rem;
+}
+@media (min-width: 1024px) {
+  .header .right {
+    gap: 1.4679682082rem;
+  }
+}
+.header .right .tabs {
+  font-size: 1.6386621859rem;
+}
+@media (min-width: 1024px) {
+  .header .right .tabs {
+    font-size: 0.819331093rem;
+  }
+}
+.header .right .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.1607190484rem;
+}
+@media (min-width: 1024px) {
+  .header .right .icon-container {
+    gap: 0.5803595242rem;
+  }
+}
+.header .right .icon-container .icon {
+  position: relative;
+}
+.header .right .icon-container .icon i {
+  font-size: 1.6386621859rem;
+}
+@media (min-width: 1024px) {
+  .header .right .icon-container .icon i {
+    font-size: 0.819331093rem;
+  }
+}
+.header .right .icon-container .icon .badge {
+  position: absolute;
+  top: -50%;
+  right: -65%;
+  background: #608b14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 1.5703845949rem;
+  height: 1.5703845949rem;
+  border-radius: 50%;
+  font-size: 1.1381874433rem;
+}
+@media (min-width: 1024px) {
+  .header .right .icon-container .icon .badge {
+    width: 0.7851922974rem;
+    height: 0.7851922974rem;
+    font-size: 0.5690937217rem;
+    top: -20%;
+  }
+}
+
+.header * {
+  color: white;
+}
+
+nav.navigation {
+  width: 100%;
+  height: 5.9401504241rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  nav.navigation {
+    height: 2.970075212rem;
+  }
+}
+nav.navigation ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2.6628260522rem;
+}
+@media (min-width: 1024px) {
+  nav.navigation ul {
+    gap: 1.3314130261rem;
+  }
+}
+nav.navigation ul li a {
+  color: #3d5f00;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6099855977rem;
+}
+@media (min-width: 1024px) {
+  nav.navigation ul li a {
+    font-size: 0.8049927988rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav.navigation {
+    height: 2.970075212rem;
+  }
+  nav.navigation ul {
+    gap: 1.3314130261rem;
+  }
+  nav.navigation ul li a {
+    font-size: 0.8049927988rem;
+  }
+}
+section.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  height: calc(100vh - 11.8803008481rem);
+}
+@media (min-width: 1024px) {
+  section.banner {
+    height: calc(100vh - 5.9401504241rem);
+  }
+}
+section.banner .banner__content {
+  position: relative;
+  z-index: 1;
+  margin-left: 3.8918226916rem;
+}
+@media (min-width: 1024px) {
+  section.banner .banner__content {
+    margin-left: 1.9459113458rem;
+  }
+}
+section.banner .banner__content .bold {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4.5520669974rem;
+}
+@media (min-width: 1024px) {
+  section.banner .banner__content .bold {
+    font-size: 2.2760334987rem;
+  }
+}
+section.banner .banner__content hr {
+  background: #3d5f00;
+  border: none;
+  margin: 2.6628260522rem 0;
+  height: 0.4779431376rem;
+  width: 24.9895983357rem;
+}
+@media (min-width: 1024px) {
+  section.banner .banner__content hr {
+    margin: 1.3314130261rem 0;
+    height: 0.2389715688rem;
+    width: 12.4947991679rem;
+  }
+}
+section.banner .banner__content p {
+  font-size: 1.4222222222rem;
+  margin-bottom: 4.5745986024rem;
+}
+@media (min-width: 1024px) {
+  section.banner .banner__content p {
+    font-size: 0.7111111111rem;
+    margin-bottom: 2.2872993012rem;
+  }
+}
+section.banner .banner__content .btn.order {
+  text-transform: uppercase;
+  width: 15.7721235398rem;
+  height: 5.5987624687rem;
+  margin-right: 1.1607190484rem;
+}
+@media (min-width: 1024px) {
+  section.banner .banner__content .btn.order {
+    width: 7.8860617699rem;
+    height: 2.7993812343rem;
+    margin-right: 0.5803595242rem;
+  }
+}
+section.banner .banner__content .btn.arrow {
+  width: 6.6229263349rem;
+  height: 5.5987624687rem;
+}
+@media (min-width: 1024px) {
+  section.banner .banner__content .btn.arrow {
+    width: 3.3114631674rem;
+    height: 2.7993812343rem;
+  }
+}
+section.banner .banner__content .btn.arrow i {
+  color: white;
+}
+section.banner .banner-image img {
+  display: none;
+}
+@media (min-width: 1024px) {
+  section.banner .banner-image img {
+    display: block;
+    height: calc(100vh - 5.9401504241rem);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../assets/font/Roboto-Regular.ttf");
 }
 
 /*# sourceMappingURL=main.css.map */

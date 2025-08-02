@@ -1,0 +1,95 @@
+@use "../abstract/function" as *;
+@use "../abstract/variable" as *;
+@use "../abstract/responsive" as *;
+
+section.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  //background: black;
+
+  $header: calculateToMobile(87);
+  $nav: calculateToMobile(87);
+  height: calc(100vh - ($header + $nav));
+  @include Desktop {
+    $header: calculateToRem(87);
+    $nav: calculateToRem(87);
+    height: calc(100vh - ($header + $nav));
+  }
+  .banner__content {
+    position: relative;
+    z-index: 1;
+    margin-left: calculateToMobile(57);
+    @include Desktop {
+      margin-left: calculateToRem(57);
+    }
+    .bold {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: calculateToMobile(66.67);
+      @include Desktop {
+        font-size: calculateToRem(66.67);
+      }
+    }
+
+    hr {
+      background: $primary_color;
+      border: none;
+      margin: calculateToMobile(39) 0;
+      height: calculateToMobile(7);
+      width: calculateToMobile(366);
+      @include Desktop {
+        margin: calculateToRem(39) 0;
+        height: calculateToRem(7);
+        width: calculateToRem(366);
+      }
+    }
+
+    p {
+      font-size: calculateToMobile(20.83);
+      margin-bottom: calculateToMobile(67);
+      @include Desktop {
+        font-size: calculateToRem(20.83);
+        margin-bottom: calculateToRem(67);
+      }
+    }
+
+    .btn.order {
+      text-transform: uppercase;
+      width: calculateToMobile(231);
+      height: calculateToMobile(82);
+      margin-right: calculateToMobile(17);
+      @include Desktop {
+        width: calculateToRem(231);
+        height: calculateToRem(82);
+        margin-right: calculateToRem(17);
+      }
+    }
+    .btn.arrow {
+      width: calculateToMobile(97);
+      height: calculateToMobile(82);
+      @include Desktop {
+        width: calculateToRem(97);
+        height: calculateToRem(82);
+      }
+      i {
+        color: white;
+      }
+    }
+  }
+  .banner-image {
+    img {
+      display: none;
+      @include Desktop {
+        display: block;
+        $header: calculateToRem(87);
+        $nav: calculateToRem(87);
+        height: calc(100vh - ($header + $nav));
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as *;
+@use "../abstract/responsive" as *;
+
+* {
+  color: $primary-color;
+}
+
+.title {
+  font-size: calculateToMobile(54.17);
+  @include Desktop {
+    font-size: calculateToRem(54.17);
+  }
+  text-transform: capitalize;
+}
+
+p {
+  font-size: calculateToMobile(25);
+  @include Desktop {
+    font-size: calculateToRem(25);
+  }
+}

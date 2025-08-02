@@ -2,7 +2,18 @@
 @use "abstract/variable" as *;
 @use "base/reset" as *;
 @use "base/typographie" as *;
+@use "component/btn" as *;
+@use "component/text" as *;
+
+@use "layout/header" as *;
+@use "layout/navigation" as *;
+@use "layout/banner" as *;
 
 @import "../assets/FontAwesome/css/all.min.css";
 @import "../assets/slick/slick.css";
 @import "../assets/slick/slick-theme.css";
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../assets/font/Roboto-Regular.ttf");
+}

@@ -1,0 +1,13 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as *;
+@use "../abstract/responsive" as *;
+
+.btn {
+  color: $secondary-color;
+  background-color: $primary-color;
+  border: none;
+  border-radius: calculateToMobile(20) 0;
+  @include Desktop {
+    border-radius: calculateToRem(20) 0;
+  }
+}

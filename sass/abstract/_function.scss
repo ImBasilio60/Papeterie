@@ -14,7 +14,7 @@
 }
 
 @function calculateLg() {
-  $value: calc((320 * $font-size) / $screen);
+  $value: calc((1024 * $font-size) / $screen);
   @return calc($value / 10.24 * 1vw);
 }
 

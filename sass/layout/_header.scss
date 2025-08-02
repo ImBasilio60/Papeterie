@@ -1,0 +1,110 @@
+@use "../abstract/function" as *;
+@use "../abstract/variable" as *;
+@use "../abstract/responsive" as *;
+.header {
+  background: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calculateToMobile(87);
+  padding: calculateToMobile(23) calculateToMobile(56);
+  @include Desktop {
+    height: calculateToRem(87);
+    padding: calculateToRem(23) calculateToRem(56);
+  }
+  .left {
+    border-bottom: white solid 1px;
+    position: relative;
+    display: none;
+    width: calculateToMobile(282);
+    @include Desktop {
+      display: block;
+      width: calculateToRem(282);
+    }
+    input {
+      width: 80%;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+    input::placeholder {
+      color: white;
+    }
+    i {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      position: absolute;
+      font-size: calculateToMobile(24);
+      @include Desktop {
+        font-size: calculateToRem(24);
+      }
+    }
+  }
+  .center {
+    cursor: pointer;
+    img {
+      width: calculateToMobile(75);
+      @include Desktop {
+        width: calculateToRem(75);
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: space-around;
+    gap: calculateToMobile(43);
+    @include Desktop {
+      gap: calculateToRem(43);
+    }
+    .tabs {
+      font-size: calculateToMobile(24);
+      @include Desktop {
+        font-size: calculateToRem(24);
+      }
+    }
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: calculateToMobile(17);
+      @include Desktop {
+        gap: calculateToRem(17);
+      }
+      .icon {
+        i {
+          font-size: calculateToMobile(24);
+          @include Desktop {
+            font-size: calculateToRem(24);
+          }
+        }
+        position: relative;
+        .badge {
+          position: absolute;
+          top: -50%;
+          right: -65%;
+          background: #608b14;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: calculateToMobile(23);
+          height: calculateToMobile(23);
+          border-radius: 50%;
+          font-size: calculateToMobile(16.67);
+          @include Desktop {
+            width: calculateToRem(23);
+            height: calculateToRem(23);
+            font-size: calculateToRem(16.67);
+            top: -20%;
+          }
+        }
+      }
+    }
+  }
+}
+.header * {
+  color: white;
+}

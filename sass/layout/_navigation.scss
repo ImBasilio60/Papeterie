@@ -1,0 +1,46 @@
+@use "../abstract/function" as *;
+@use "../abstract/variable" as *;
+@use "../abstract/responsive" as *;
+nav.navigation {
+  width: 100%;
+  height: calculateToMobile(87);
+  @include Desktop{
+    height: calculateToRem(87);
+  };
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: calculateToMobile(39);
+    @include Desktop{
+      gap: calculateToRem(39);
+    };
+    li {
+      a {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: calculateToMobile(23.58);
+        @include Desktop{
+          font-size: calculateToRem(23.58);
+        };
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  nav.navigation {
+    height: calculateToRem(87);
+
+    ul {
+      gap: calculateToRem(39);
+      li {
+        a {
+          font-size: calculateToRem(23.58);
+        }
+      }
+    }
+  }
+}
