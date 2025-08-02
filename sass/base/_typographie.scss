@@ -1,0 +1,11 @@
+@use "../abstract/function" as *;
+@use "../abstract/variable" as *;
+
+html {
+  $min: calculateSm();
+  $px: calculateLg();
+  $max: calculateXl();
+
+  font-size: clamp($min, $px, $max);
+  font-family: $main-font;
+}

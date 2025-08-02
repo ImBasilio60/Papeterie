@@ -1,0 +1,23 @@
+@use "./variable" as *;
+
+@function calculateToRem($value) {
+  $value-px: calc(($value * 1024) / $screen);
+  @return calc($value-px / $font-size * 1rem);
+}
+
+@function calculateToMobile($value) {
+  @return calc(calculateToRem($value) * 2);
+}
+
+@function calculateSm() {
+  @return calc((320 * $font-size) / $screen * 1px);
+}
+
+@function calculateLg() {
+  $value: calc((320 * $font-size) / $screen);
+  @return calc($value / 10.24 * 1vw);
+}
+
+@function calculateXl() {
+  @return calc((1920 * $font-size) / $screen * 1px);
+}

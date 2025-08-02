@@ -1,0 +1,30 @@
+@import "../assets/FontAwesome/css/all.min.css";
+@import "../assets/slick/slick.css";
+@import "../assets/slick/slick-theme.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.5s;
+  color: #23262c;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+html {
+  font-size: clamp(3.7777777778px, 0.3689236111vw, 22.6666666667px);
+  font-family: "Raleway", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
