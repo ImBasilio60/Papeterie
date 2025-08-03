@@ -1,0 +1,44 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as *;
+@use "../abstract/responsive" as *;
+
+.transition__title {
+  text-align: center;
+  div {
+    margin-bottom: calculateToMobile(43);
+   @include Desktop{
+     margin-bottom: calculateToRem(43);
+   };
+    position: relative;
+    .behind {
+      z-index: -1;
+      position: relative;
+      font-family: Roboto-Bold, sans-serif;
+      color: #e2e7d9;
+      font-size: calculateToMobile(100);
+      @include Desktop{
+        font-size: calculateToRem(100);
+      };
+    }
+    .before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: calculateToMobile(50);
+      @include Desktop{
+        font-size: calculateToRem(50);
+      };
+    }
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    font-size: calculateToMobile(25);
+    @include Desktop{
+      font-size: calculateToRem(25);
+    };
+  }
+}

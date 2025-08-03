@@ -4,6 +4,7 @@
 @use "base/typographie" as *;
 @use "component/btn" as *;
 @use "component/text" as *;
+@use "component/transition_title" as *;
 
 @use "layout/header" as *;
 @use "layout/navigation" as *;
@@ -16,4 +17,8 @@
 @font-face {
   font-family: Roboto-Regular;
   src: url("../assets/font/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../assets/font/Roboto-Bold.ttf");
 }

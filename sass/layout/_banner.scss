@@ -7,7 +7,7 @@ section.banner {
   display: flex;
   align-items: center;
   background: #f2f2f2;
-  //background: black;
+  margin-bottom: calculateToRem(151);
 
   $header: calculateToMobile(87);
   $nav: calculateToMobile(87);
