@@ -1,0 +1,65 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as *;
+@use "../abstract/responsive" as *;
+
+.service-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: calculateToMobile(136);
+  padding: 0 calculateToMobile(57);
+  margin-bottom: calculateToMobile(52);
+  @include Desktop {
+    flex-direction: row;
+    justify-content: center;
+    gap: calculateToRem(136);
+    padding: 0 calculateToRem(57);
+    margin-bottom: calculateToRem(52);
+  }
+  .text-container {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-bottom: calculateToMobile(38);
+      @include Desktop {
+        margin-bottom: calculateToRem(38);
+      }
+      h1 {
+        font-size: calculateToMobile(45.83);
+        @include Desktop {
+          font-size: calculateToRem(45.83);
+        }
+      }
+    }
+    p {
+      margin-bottom: calculateToMobile(50);
+      font-size: calculateToMobile(25);
+      @include Desktop {
+        margin-bottom: calculateToRem(50);
+        font-size: calculateToRem(25);
+      }
+    }
+    .btn {
+      width: calculateToMobile(199);
+      height: calculateToMobile(67);
+      @include Desktop {
+        width: calculateToRem(199);
+        height: calculateToRem(67);
+      }
+    }
+  }
+}
+.service-card.first {
+  margin-top: calculateToMobile(128);
+  @include Desktop {
+    margin-top: calculateToRem(128);
+  }
+}
+.service-card.third {
+  margin-bottom: calculateToMobile(150);
+  @include Desktop {
+    margin-bottom: calculateToRem(150);
+  }
+}

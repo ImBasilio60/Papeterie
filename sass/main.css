@@ -175,7 +175,7 @@ section.medicine_food .image-container {
   position: relative;
 }
 section.medicine_food .image-container img {
-  height: 50vh;
+  height: 60vh;
 }
 section.medicine_food .image-container .border {
   border: #3d5f00 solid 0.4779431376rem;
@@ -228,6 +228,82 @@ section.medicine_food .image-container .border {
 @media (min-width: 1024px) {
   .medicine_food.second .image-container {
     order: 1;
+  }
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9.285752387rem;
+  padding: 0 3.8918226916rem;
+  margin-bottom: 3.5504347362rem;
+}
+@media (min-width: 1024px) {
+  .service-card {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4.6428761935rem;
+    padding: 0 1.9459113458rem;
+    margin-bottom: 1.7752173681rem;
+  }
+}
+.service-card .text-container .top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 2.5945484611rem;
+}
+@media (min-width: 1024px) {
+  .service-card .text-container .top {
+    margin-bottom: 1.2972742305rem;
+  }
+}
+.service-card .text-container .top h1 {
+  font-size: 3.1291619993rem;
+}
+@media (min-width: 1024px) {
+  .service-card .text-container .top h1 {
+    font-size: 1.5645809996rem;
+  }
+}
+.service-card .text-container p {
+  margin-bottom: 3.4138795541rem;
+  font-size: 1.706939777rem;
+}
+@media (min-width: 1024px) {
+  .service-card .text-container p {
+    margin-bottom: 1.706939777rem;
+    font-size: 0.8534698885rem;
+  }
+}
+.service-card .text-container .btn {
+  width: 13.5872406252rem;
+  height: 4.5745986024rem;
+}
+@media (min-width: 1024px) {
+  .service-card .text-container .btn {
+    width: 6.7936203126rem;
+    height: 2.2872993012rem;
+  }
+}
+
+.service-card.first {
+  margin-top: 8.7395316584rem;
+}
+@media (min-width: 1024px) {
+  .service-card.first {
+    margin-top: 4.3697658292rem;
+  }
+}
+
+.service-card.third {
+  margin-bottom: 10.2416386622rem;
+}
+@media (min-width: 1024px) {
+  .service-card.third {
+    margin-bottom: 5.1208193311rem;
   }
 }
 
