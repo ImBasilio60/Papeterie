@@ -1,0 +1,107 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as *;
+@use "../abstract/responsive" as *;
+
+section.medicine_food {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: calculateToMobile(138);
+  @include Desktop {
+    flex-direction: row;
+    gap: calculateToRem(138);
+    justify-content: center;
+  }
+  .text-container {
+    .title {
+      font-size: calculateToMobile(54.17);
+      margin-bottom: calculateToMobile(50);
+      @include Desktop {
+        font-size: calculateToRem(54.17);
+        margin-bottom: calculateToRem(50);
+      }
+    }
+    p {
+      margin-bottom: calculateToMobile(50);
+      font-size: calculateToMobile(25);
+      @include Desktop {
+        margin-bottom: calculateToRem(50);
+        font-size: calculateToRem(25);
+      }
+    }
+    .btn.order {
+      text-transform: uppercase;
+      width: calculateToMobile(231);
+      height: calculateToMobile(82);
+      margin-right: calculateToMobile(17);
+      @include Desktop {
+        width: calculateToRem(231);
+        height: calculateToRem(82);
+        margin-right: calculateToRem(17);
+      }
+    }
+    .btn.arrow {
+      width: calculateToMobile(97);
+      height: calculateToMobile(82);
+      @include Desktop {
+        width: calculateToRem(97);
+        height: calculateToRem(82);
+      }
+      i {
+        color: white;
+      }
+    }
+  }
+  .image-container {
+    position: relative;
+    img {
+      height: 50vh;
+    }
+    .border {
+      border: $primary-color solid calculateToMobile(7);
+      border-right: none;
+      border-bottom: none;
+      @include Desktop {
+        border: $primary-color solid calculateToRem(7);
+        border-right: none;
+        border-bottom: none;
+      }
+
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: -5%;
+      left: -5%;
+    }
+  }
+}
+
+.medicine_food.first {
+  margin-top: calculateToMobile(122);
+  @include Desktop {
+    margin-top: calculateToRem(122);
+  }
+}
+
+.medicine_food.second {
+  margin-top: calculateToMobile(155);
+  margin-bottom: calculateToMobile(153);
+  @include Desktop {
+    margin-top: calculateToRem(155);
+    margin-bottom: calculateToRem(153);
+  }
+  .text-container {
+    order: 1;
+    @include Desktop {
+      order: 2;
+    }
+  }
+  .image-container {
+    order: 2;
+    @include Desktop {
+      order: 1;
+    }
+  }
+}
