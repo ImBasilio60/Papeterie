@@ -16,10 +16,6 @@ section.special-offer {
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    left: calculateToMobile(57);
-    @include Desktop {
-      left: calculateToRem(57);
-    }
     h2 {
       font-family: "Roboto-Medium", sans-serif;
       font-size: calculateToMobile(33.33);
@@ -76,6 +72,23 @@ section.special-offer {
 
     @include Desktop {
       height: auto;
+    }
+  }
+}
+
+.special-offer.first {
+  .text-content {
+    left: calculateToMobile(57);
+    @include Desktop {
+      left: calculateToRem(57);
+    }
+  }
+}
+.special-offer.second {
+  .text-content {
+    right: calculateToMobile(57);
+    @include Desktop {
+      right:  calculateToRem(57);
     }
   }
 }

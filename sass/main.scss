@@ -13,7 +13,7 @@
 @use "layout/navigation" as *;
 @use "layout/banner" as *;
 @use "layout/special-offer" as *;
-@use "layout/pricing-cards" as *;
+@use "component/card-container" as *;
 
 @import "../assets/FontAwesome/css/all.min.css";
 @import "../assets/slick/slick.css";
