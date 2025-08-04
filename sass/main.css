@@ -416,6 +416,82 @@ section.medicine_food .image-container .border {
   }
 }
 
+.card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.0724915987rem;
+  padding: 0 3.8918226916rem;
+  margin-top: 8.3298661119rem;
+  margin-bottom: 10.7195817998rem;
+}
+@media (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 1.9459113458rem;
+    gap: 1.5362457993rem;
+    margin-top: 4.164933056rem;
+    margin-bottom: 5.3597908999rem;
+  }
+}
+
+.card-container.second img,
+.card-container.second div {
+  height: 26.2868725663rem;
+}
+@media (min-width: 1024px) {
+  .card-container.second img,
+  .card-container.second div {
+    height: 13.1434362831rem;
+  }
+}
+.card-container.second .instruction-card {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-container.second .instruction-card h2 {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 2.2756921107rem;
+  margin-bottom: 2.7993812343rem;
+}
+@media (min-width: 1024px) {
+  .card-container.second .instruction-card h2 {
+    font-size: 1.1378460554rem;
+    margin-bottom: 1.3996906172rem;
+  }
+}
+.card-container.second .instruction-card p {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 1.706939777rem;
+  margin-bottom: 2.6628260522rem;
+}
+@media (min-width: 1024px) {
+  .card-container.second .instruction-card p {
+    font-size: 0.8534698885rem;
+    margin-bottom: 1.3314130261rem;
+  }
+}
+.card-container.second .instruction-card .btn {
+  font-family: roboto-medium, sans-serif;
+  font-size: 1.1381874433rem;
+  width: 10.7878593908rem;
+  height: 3.0724915987rem;
+}
+@media (min-width: 1024px) {
+  .card-container.second .instruction-card .btn {
+    width: 5.3939296954rem;
+    height: 1.5362457993rem;
+    font-size: 0.5690937217rem;
+  }
+}
+
 .header {
   background: #3d5f00;
   display: flex;
@@ -791,80 +867,107 @@ section.special-offer img {
   }
 }
 
-.card-container {
+footer {
   width: 100%;
-  height: auto;
+  background: #3d5f00;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3.0724915987rem;
-  padding: 0 3.8918226916rem;
-  margin-top: 8.3298661119rem;
-  margin-bottom: 10.7195817998rem;
+  height: 34.8215714514rem;
 }
 @media (min-width: 1024px) {
-  .card-container {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0 1.9459113458rem;
-    gap: 1.5362457993rem;
-    margin-top: 4.164933056rem;
-    margin-bottom: 5.3597908999rem;
+  footer {
+    height: 17.4107857257rem;
+  }
+}
+footer .logo {
+  height: 6.0084280151rem;
+  margin-bottom: 2.7311036432rem;
+}
+@media (min-width: 1024px) {
+  footer .logo {
+    margin-bottom: 1.3655518216rem;
+    height: 3.0042140076rem;
+  }
+}
+footer h1 {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 3.4138795541rem;
+  margin-bottom: 1.5021070038rem;
+  letter-spacing: 0.6144983197rem;
+}
+@media (min-width: 1024px) {
+  footer h1 {
+    font-size: 1.706939777rem;
+    margin-bottom: 0.7510535019rem;
+    letter-spacing: 0.3072491599rem;
+  }
+}
+footer h2 {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 2.2756921107rem;
+  margin-bottom: 3.0042140076rem;
+  letter-spacing: 0.2048327732rem;
+}
+@media (min-width: 1024px) {
+  footer h2 {
+    font-size: 1.1378460554rem;
+    margin-bottom: 1.5021070038rem;
+    letter-spacing: 0.1024163866rem;
+  }
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9558862751rem;
+  margin-bottom: 3.345601963rem;
+}
+@media (min-width: 1024px) {
+  footer .social-media {
+    gap: 0.4779431376rem;
+    margin-bottom: 1.6728009815rem;
+  }
+}
+footer .social-media div {
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.3897156878rem;
+  height: 2.3897156878rem;
+}
+@media (min-width: 1024px) {
+  footer .social-media div {
+    width: 1.1948578439rem;
+    height: 1.1948578439rem;
+  }
+}
+footer .social-media div i {
+  font-size: 1.2289966395rem;
+  color: #3d5f00;
+}
+@media (min-width: 1024px) {
+  footer .social-media div i {
+    font-size: 0.6144983197rem;
+  }
+}
+footer h3 {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 2.8451272204rem;
+  letter-spacing: 0.3413879554rem;
+}
+@media (min-width: 1024px) {
+  footer h3 {
+    letter-spacing: 0.1706939777rem;
+    font-size: 1.4225636102rem;
   }
 }
 
-.card-container.second img,
-.card-container.second div {
-  height: 26.2868725663rem;
-}
-@media (min-width: 1024px) {
-  .card-container.second img,
-  .card-container.second div {
-    height: 13.1434362831rem;
-  }
-}
-.card-container.second .instruction-card {
-  background: #f1f1f1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.card-container.second .instruction-card h2 {
-  font-family: Roboto-Medium, sans-serif;
-  font-size: 2.2756921107rem;
-  margin-bottom: 2.7993812343rem;
-}
-@media (min-width: 1024px) {
-  .card-container.second .instruction-card h2 {
-    font-size: 1.1378460554rem;
-    margin-bottom: 1.3996906172rem;
-  }
-}
-.card-container.second .instruction-card p {
-  font-family: Roboto-Regular, sans-serif;
-  font-size: 1.706939777rem;
-  margin-bottom: 2.6628260522rem;
-}
-@media (min-width: 1024px) {
-  .card-container.second .instruction-card p {
-    font-size: 0.8534698885rem;
-    margin-bottom: 1.3314130261rem;
-  }
-}
-.card-container.second .instruction-card .btn {
-  font-family: roboto-medium, sans-serif;
-  font-size: 1.1381874433rem;
-  width: 10.7878593908rem;
-  height: 3.0724915987rem;
-}
-@media (min-width: 1024px) {
-  .card-container.second .instruction-card .btn {
-    width: 5.3939296954rem;
-    height: 1.5362457993rem;
-    font-size: 0.5690937217rem;
-  }
+footer * {
+  color: white;
 }
 
 @font-face {

@@ -8,12 +8,13 @@
 @use "component/medicine-food" as *;
 @use "component/service-card" as *;
 @use "component/pricing-card" as *;
+@use "component/card-container" as *;
 
 @use "layout/header" as *;
 @use "layout/navigation" as *;
 @use "layout/banner" as *;
 @use "layout/special-offer" as *;
-@use "component/card-container" as *;
+@use "layout/footer" as *;
 
 @import "../assets/FontAwesome/css/all.min.css";
 @import "../assets/slick/slick.css";

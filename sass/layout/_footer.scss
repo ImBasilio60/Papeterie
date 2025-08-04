@@ -1,0 +1,88 @@
+@use "../abstract/function" as *;
+@use "../abstract/variable" as *;
+@use "../abstract/responsive" as *;
+footer {
+  width: 100%;
+  background: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calculateToMobile(510);
+  @include Desktop {
+    height: calculateToRem(510);
+  }
+  .logo {
+    height: calculateToMobile(88);
+    margin-bottom: calculateToMobile(40);
+    @include Desktop {
+      margin-bottom: calculateToRem(40);
+      height: calculateToRem(88);
+    }
+  }
+  h1 {
+    font-family: Roboto-Medium, sans-serif;
+    font-size: calculateToMobile(50);
+    margin-bottom: calculateToMobile(22);
+    letter-spacing: calculateToMobile(9);
+    @include Desktop {
+      font-size: calculateToRem(50);
+      margin-bottom: calculateToRem(22);
+      letter-spacing: calculateToRem(9);
+    }
+  }
+  h2 {
+    font-family: Roboto-Regular, sans-serif;
+    font-size: calculateToMobile(33.33);
+    margin-bottom: calculateToMobile(44);
+    letter-spacing: calculateToMobile(3);
+    @include Desktop {
+      font-size: calculateToRem(33.33);
+      margin-bottom: calculateToRem(44);
+      letter-spacing: calculateToRem(3);
+    }
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calculateToMobile(14);
+    margin-bottom: calculateToMobile(49);
+    @include Desktop {
+      gap: calculateToRem(14);
+      margin-bottom: calculateToRem(49);
+    }
+    div {
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calculateToMobile(35);
+      height: calculateToMobile(35);
+      @include Desktop {
+        width: calculateToRem(35);
+        height: calculateToRem(35);
+      }
+      i {
+        font-size: calculateToMobile(18);
+        color: $primary-color;
+        @include Desktop {
+          font-size: calculateToRem(18);
+        }
+      }
+    }
+  }
+  h3 {
+    font-family: Roboto-Medium, sans-serif;
+    font-size: calculateToMobile(41.67);
+    letter-spacing: calculateToMobile(5);
+    @include Desktop {
+      letter-spacing: calculateToRem(5);
+      font-size: calculateToRem(41.67);
+    }
+  }
+}
+footer * {
+  color: white;
+}
