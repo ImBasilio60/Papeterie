@@ -7,10 +7,13 @@
 @use "component/transition_title" as *;
 @use "component/medicine-food" as *;
 @use "component/service-card" as *;
+@use "component/pricing-card" as *;
 
 @use "layout/header" as *;
 @use "layout/navigation" as *;
 @use "layout/banner" as *;
+@use "layout/special-offer" as *;
+@use "layout/pricing-cards" as *;
 
 @import "../assets/FontAwesome/css/all.min.css";
 @import "../assets/slick/slick.css";
@@ -19,6 +22,10 @@
 @font-face {
   font-family: Roboto-Regular;
   src: url("../assets/font/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../assets/font/Roboto-Medium.ttf");
 }
 @font-face {
   font-family: Roboto-Bold;

@@ -307,6 +307,92 @@ section.medicine_food .image-container .border {
   }
 }
 
+.pricing-card {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .pricing-card {
+    width: 33.3333333333%;
+  }
+}
+.pricing-card .pricing-card-header {
+  background: #3d5f00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 17.0693977703rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-header {
+    height: 8.5346988852rem;
+  }
+}
+.pricing-card .pricing-card-header h2 {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 2.8451272204rem;
+  margin-bottom: 1.3655518216rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-header h2 {
+    font-size: 1.4225636102rem;
+    margin-bottom: 0.6827759108rem;
+  }
+}
+.pricing-card .pricing-card-header h1 {
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 3.9826318878rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-header h1 {
+    font-size: 1.9913159439rem;
+  }
+}
+.pricing-card .pricing-card-header * {
+  color: white;
+}
+.pricing-card .pricing-card-content {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25.8089294287rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-content {
+    height: 12.9044647144rem;
+  }
+}
+.pricing-card .pricing-card-content ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.8235451005rem;
+  gap: 2.4579932789rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-content ul {
+    margin-bottom: 1.9117725503rem;
+    gap: 1.2289966395rem;
+  }
+}
+.pricing-card .pricing-card-content ul li {
+  text-transform: capitalize;
+}
+.pricing-card .pricing-card-content .btn {
+  width: 12.9727423054rem;
+  height: 4.233210647rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-content .btn {
+    width: 6.4863711527rem;
+    height: 2.1166053235rem;
+  }
+}
+
 .header {
   background: #3d5f00;
   display: flex;
@@ -575,9 +661,129 @@ section.banner .banner-image img {
   }
 }
 
+section.special-offer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10.5147490265rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer {
+    margin-bottom: 5.2573745133rem;
+  }
+}
+section.special-offer .text-content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3.8918226916rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content {
+    left: 1.9459113458rem;
+  }
+}
+section.special-offer .text-content h2 {
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 2.2756921107rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content h2 {
+    font-size: 1.1378460554rem;
+  }
+}
+section.special-offer .text-content h2.first {
+  margin-bottom: 2.0483277324rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content h2.first {
+    margin-bottom: 1.0241638662rem;
+  }
+}
+section.special-offer .text-content h1 {
+  font-family: "Roboto-Bold", sans-serif;
+  margin-bottom: 1.3655518216rem;
+  font-size: 3.9826318878rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content h1 {
+    margin-bottom: 0.6827759108rem;
+    font-size: 1.9913159439rem;
+  }
+}
+section.special-offer .text-content h2.second {
+  text-transform: uppercase;
+  margin-bottom: 2.7311036432rem;
+  letter-spacing: 1.3655518216rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content h2.second {
+    margin-bottom: 1.3655518216rem;
+    letter-spacing: 0.6827759108rem;
+  }
+}
+section.special-offer .text-content p {
+  margin-bottom: 3.2773243719rem;
+  font-size: 1.706939777rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content p {
+    margin-bottom: 1.6386621859rem;
+    font-size: 0.8534698885rem;
+  }
+}
+section.special-offer .text-content .btn {
+  width: 15.4307355844rem;
+  height: 5.3256521043rem;
+}
+@media (min-width: 1024px) {
+  section.special-offer .text-content .btn {
+    width: 7.7153677922rem;
+    height: 2.6628260522rem;
+  }
+}
+section.special-offer img {
+  position: relative;
+  z-index: -1;
+  height: 85vh;
+  width: 100vw;
+}
+@media (min-width: 1024px) {
+  section.special-offer img {
+    height: auto;
+  }
+}
+
+.pricing-cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.0724915987rem;
+  padding: 0 3.8918226916rem;
+  margin-top: 8.3298661119rem;
+}
+@media (min-width: 1024px) {
+  .pricing-cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 1.9459113458rem;
+    gap: 1.5362457993rem;
+    margin-top: 4.164933056rem;
+  }
+}
+
 @font-face {
   font-family: Roboto-Regular;
   src: url("../assets/font/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../assets/font/Roboto-Medium.ttf");
 }
 @font-face {
   font-family: Roboto-Bold;
