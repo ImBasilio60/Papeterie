@@ -1,31 +1,48 @@
 @use "../abstract/function" as *;
 @use "../abstract/variable" as *;
 @use "../abstract/responsive" as *;
-nav.navigation {
-  width: 100%;
-  height: calculateToMobile(87);
-  @include Desktop{
-    height: calculateToRem(87);
-  };
-  align-items: center;
+nav.navigation.active {
   display: flex;
+}
+nav.navigation {
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100vh;
+  align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 5;
+  @include Desktop {
+    display: flex;
+    position: relative;
+    height: calculateToRem(87);
+  }
   ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     gap: calculateToMobile(39);
-    @include Desktop{
+    @include Desktop {
+      flex-direction: row;
       gap: calculateToRem(39);
-    };
+    }
     li {
       a {
         color: $primary-color;
         text-transform: uppercase;
         font-weight: bold;
         font-size: calculateToMobile(23.58);
-        @include Desktop{
+        @include Desktop {
           font-size: calculateToRem(23.58);
-        };
+        }
+      }
+    }
+    li.none {
+      display: block;
+      @include Desktop {
+        display: none;
       }
     }
   }

@@ -492,6 +492,11 @@ section.medicine_food .image-container .border {
   }
 }
 
+.header.active {
+  position: fixed;
+  z-index: 6;
+}
+
 .header {
   background: #3d5f00;
   display: flex;
@@ -505,6 +510,7 @@ section.medicine_food .image-container .border {
   .header {
     height: 2.970075212rem;
     padding: 0.7851922974rem 1.9117725503rem;
+    position: relative;
   }
 }
 .header .left {
@@ -562,11 +568,34 @@ section.medicine_food .image-container .border {
     gap: 1.4679682082rem;
   }
 }
-.header .right .tabs {
+.header .right .burger-toggle {
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.header .right .burger-toggle i {
   font-size: 1.6386621859rem;
 }
 @media (min-width: 1024px) {
+  .header .right .burger-toggle i {
+    font-size: 0.819331093rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header .right .burger-toggle {
+    display: none;
+  }
+}
+.header .right .tabs {
+  font-size: 1.6386621859rem;
+  display: none;
+}
+@media (min-width: 1024px) {
   .header .right .tabs {
+    display: block;
     font-size: 0.819331093rem;
   }
 }
@@ -619,25 +648,37 @@ section.medicine_food .image-container .border {
   color: white;
 }
 
-nav.navigation {
-  width: 100%;
-  height: 5.9401504241rem;
-  align-items: center;
+nav.navigation.active {
   display: flex;
+}
+
+nav.navigation {
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100vh;
+  align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 5;
 }
 @media (min-width: 1024px) {
   nav.navigation {
+    display: flex;
+    position: relative;
     height: 2.970075212rem;
   }
 }
 nav.navigation ul {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   gap: 2.6628260522rem;
 }
 @media (min-width: 1024px) {
   nav.navigation ul {
+    flex-direction: row;
     gap: 1.3314130261rem;
   }
 }
@@ -650,6 +691,14 @@ nav.navigation ul li a {
 @media (min-width: 1024px) {
   nav.navigation ul li a {
     font-size: 0.8049927988rem;
+  }
+}
+nav.navigation ul li.none {
+  display: block;
+}
+@media (min-width: 1024px) {
+  nav.navigation ul li.none {
+    display: none;
   }
 }
 

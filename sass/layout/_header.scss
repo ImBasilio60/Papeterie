@@ -1,6 +1,10 @@
 @use "../abstract/function" as *;
 @use "../abstract/variable" as *;
 @use "../abstract/responsive" as *;
+.header.active {
+  position: fixed;
+  z-index: 6;
+}
 .header {
   background: $primary-color;
   display: flex;
@@ -12,6 +16,7 @@
   @include Desktop {
     height: calculateToRem(87);
     padding: calculateToRem(23) calculateToRem(56);
+    position: relative;
   }
   .left {
     border-bottom: white solid 1px;
@@ -59,9 +64,28 @@
     @include Desktop {
       gap: calculateToRem(43);
     }
+    .burger-toggle {
+      display: block;
+      background: transparent;
+      border: none;
+      outline: none;
+      margin-left: 2rem;
+      cursor: pointer;
+      i {
+        font-size: calculateToMobile(24);
+        @include Desktop {
+          font-size: calculateToRem(24);
+        }
+      }
+      @include Desktop {
+        display: none;
+      }
+    }
     .tabs {
       font-size: calculateToMobile(24);
+      display: none;
       @include Desktop {
+        display: block;
         font-size: calculateToRem(24);
       }
     }
