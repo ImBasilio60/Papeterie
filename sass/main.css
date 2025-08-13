@@ -63,7 +63,13 @@ p {
 }
 
 .transition__title {
+  padding: 0 3.8918226916rem;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .transition__title {
+    padding: 0 1.9459113458rem;
+  }
 }
 .transition__title div {
   margin-bottom: 2.9359364165rem;
@@ -111,18 +117,21 @@ p {
 }
 
 section.medicine_food {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 9.4223075692rem;
+  margin-left: 3.8918226916rem;
+  width: calc(100% - 3.8918226916rem - 3.8918226916rem);
 }
 @media (min-width: 1024px) {
   section.medicine_food {
     flex-direction: row;
     gap: 4.7111537846rem;
     justify-content: center;
+    width: 100%;
+    margin-left: 0;
   }
 }
 section.medicine_food .text-container .title {
@@ -173,6 +182,12 @@ section.medicine_food .text-container .btn.arrow i {
 }
 section.medicine_food .image-container {
   position: relative;
+  width: 90%;
+}
+@media (min-width: 1024px) {
+  section.medicine_food .image-container {
+    width: auto;
+  }
 }
 section.medicine_food .image-container img {
   height: 60vh;
@@ -719,10 +734,11 @@ section.banner {
   align-items: center;
   background: #f2f2f2;
   margin-bottom: 5.1549581266rem;
-  height: calc(100vh - 11.8803008481rem);
+  padding: 15.0210700379rem 0;
 }
 @media (min-width: 1024px) {
   section.banner {
+    padding: 0;
     height: calc(100vh - 5.9401504241rem);
   }
 }

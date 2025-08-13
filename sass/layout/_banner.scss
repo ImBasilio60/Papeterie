@@ -8,11 +8,9 @@ section.banner {
   align-items: center;
   background: #f2f2f2;
   margin-bottom: calculateToRem(151);
-
-  $header: calculateToMobile(87);
-  $nav: calculateToMobile(87);
-  height: calc(100vh - ($header + $nav));
+  padding: calculateToMobile(220) 0;
   @include Desktop {
+    padding: 0;
     $header: calculateToRem(87);
     $nav: calculateToRem(87);
     height: calc(100vh - ($header + $nav));

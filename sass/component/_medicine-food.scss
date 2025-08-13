@@ -3,16 +3,20 @@
 @use "../abstract/responsive" as *;
 
 section.medicine_food {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: calculateToMobile(138);
+  margin-left: calculateToMobile(57);
+  $ml: calculateToMobile(57);
+  width: calc(100% - $ml - $ml);
   @include Desktop {
     flex-direction: row;
     gap: calculateToRem(138);
     justify-content: center;
+    width: 100%;
+    margin-left: 0;
   }
   .text-container {
     .title {
@@ -56,6 +60,10 @@ section.medicine_food {
   }
   .image-container {
     position: relative;
+    width: 90%;
+    @include Desktop {
+      width: auto;
+    }
     img {
       height: 60vh;
     }
@@ -63,17 +71,16 @@ section.medicine_food {
       border: $primary-color solid calculateToMobile(7);
       border-right: none;
       border-bottom: none;
-      @include Desktop {
-        border: $primary-color solid calculateToRem(7);
-        border-right: none;
-        border-bottom: none;
-      }
-
       width: 50%;
       height: 50%;
       position: absolute;
       top: -5%;
       left: -5%;
+      @include Desktop {
+        border: $primary-color solid calculateToRem(7);
+        border-right: none;
+        border-bottom: none;
+      }
     }
   }
 }
