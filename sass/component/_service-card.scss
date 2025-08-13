@@ -50,6 +50,12 @@
       }
     }
   }
+  img {
+    width: 100%;
+    @include Desktop {
+      width: auto;
+    }
+  }
 }
 .service-card.first {
   margin-top: calculateToMobile(128);

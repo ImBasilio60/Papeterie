@@ -303,6 +303,14 @@ section.medicine_food .image-container .border {
     height: 2.2872993012rem;
   }
 }
+.service-card img {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .service-card img {
+    width: auto;
+  }
+}
 
 .service-card.first {
   margin-top: 8.7395316584rem;
