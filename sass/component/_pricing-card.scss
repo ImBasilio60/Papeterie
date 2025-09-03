@@ -67,6 +67,10 @@
       }
       li {
         text-transform: capitalize;
+        font-size: calculateToMobile(29.17);
+        @include Desktop {
+          font-size: calculateToRem(29.17);
+        }
       }
     }
     .btn {

@@ -407,6 +407,12 @@ section.medicine_food .image-container .border {
 }
 .pricing-card .pricing-card-content ul li {
   text-transform: capitalize;
+  font-size: 1.9916573318rem;
+}
+@media (min-width: 1024px) {
+  .pricing-card .pricing-card-content ul li {
+    font-size: 0.9958286659rem;
+  }
 }
 .pricing-card .pricing-card-content .btn {
   width: 12.9727423054rem;
