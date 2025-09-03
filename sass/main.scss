@@ -16,9 +16,10 @@
 @use "layout/special-offer" as *;
 @use "layout/footer" as *;
 
-@import "../assets/FontAwesome/css/all.min.css";
-@import "../assets/slick/slick.css";
-@import "../assets/slick/slick-theme.css";
+@import "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css";
+//@import "../assets/FontAwesome/css/all.min.css";
+//@import "../assets/slick/slick.css";
+//@import "../assets/slick/slick-theme.css";
 
 @font-face {
   font-family: Roboto-Regular;
